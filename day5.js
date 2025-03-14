@@ -8,9 +8,11 @@ let me = {
 
     // in array we use [] 
     // eg. console.log(me[age])
+    //array bhatha tanna index dera tanne
 
     //in array console.log(me[age])
     //in object console.log(me.age)
+    //object bhatha tanne ho vane key bhatha tanne
 
     //to enter data in object i.e. add new data in object
     me.college = "Kathmandu Engineering College"
@@ -37,7 +39,19 @@ let me = {
 
 
     // Destructuring (destructure)
-    //Let { name, age, address }   = myInfo 
+    let myInfo = {
+        name : "Binita Neupane", //key: value
+        age : 22,
+        address: "Narayanghat"
+    }
+//let infoName = myInfo.name
+//let infoAge = myInfo.age
+//let infoAddress = myInfo.address
+    
+    //console.log(infoName, infoAge, infoAddress)
+
+    //insted of assigning in three varaible use destructing
+  //let { name, age, address }   // object ma key ko name = myInfo //object name
     //console.log(name,age,address)
 
     
@@ -88,10 +102,26 @@ let me = {
 
     // To add two condition use &&  ...........and statement
     //if(newme.age > 20 && newme.address == "Narayanghat" )
-    
+
+    let info = {
+        name : "Binita Neupane", //key: value
+        age : 22,
+        address: "Narayanghat"
+    }
+    if(info.age ===20 && info.address == "Narayanghat" && info.name == "Binita Neupane"){
+        console.log("you can vote in  narayanghat")
+    }else{
+        console.log("you cannot vote")
+    }
 
     // or statement ...........one condition is true
     //if(newme.age > 20 || newme.address == "Narayanghat")
+
+    if(info.age === 22 || info.address == "Narayanghat" || info.name == "Binita Neupane"){
+        console.log("you can vote in  narayanghat")
+    }else{
+        console.log("you cannot vote")
+    }
 
 
 
